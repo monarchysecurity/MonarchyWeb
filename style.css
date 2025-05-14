@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #272727; /* Dark background for consistency */
+  color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Container */
+.container {
+  position: relative;
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: flex-end; /* Align content to the bottom */
+  align-items: flex-end; /* Align content to the left */
+  padding: 20px;
+}
+
+/* Background Map */
+.background-map {
+  background-image: url('world-map.png'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it stays behind other elements */
+  opacity: 0.8; /* Slight transparency for better visibility of content */
+}
+
+/* Profile Section */
+.profile {
+  position: absolute;
+    bottom: 30px; /* Position 30px from the bottom */
+  left: 30px; /* Position 30px from the left */
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure it stays above the background */
+}
+
+.MONARCHY_LOGO {
+  height: auto;
+  width: 250px; /* Increase logo size */
+  max-width: 300px; /* Limit the maximum width */
+  margin-bottom: 15px;
+  opacity: 0.9; /* Slight transparency for a sleek look */
+}
+
+/* Text Section */
+.text {
+  margin-top: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.text h2 {
+  font-size: 36px; /* Increase heading size */
+  color: #ffd700; /* Gold color for the heading */
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.text p {
+  font-size: 18px; /* Increase paragraph font size */
+  font-weight: bold;
+  margin: 5px 0;
+  color: #d3d3d3; /* Slightly lighter text for readability */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1f1f1f; /* Dark background for the navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the screen */
+  z-index: 10; /* Ensure it appears above other elements */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+}
+
+.navbar ul {
+  display: flex; /* Align items horizontally */
+  justify-content: space-around; /* Space items evenly */
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline; /* Inline list items */
+}
+
+.navbar ul li a {
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px;
+  font-size: 18px; /* Consistent font size */
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar ul li a.active {
+  background-color: #ffd700; /* Highlight active page with gold */
+  color: #000; /* Black text for contrast */
+}
+
+.navbar ul li a:hover {
+  background-color: #575757; /* Slightly lighter background on hover */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #1f1f1f; /* Dark gray background */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px; /* Add spacing above the footer */
+  border-top: 2px solid #ffd700; /* Gold border for a professional look */
+}
+
+.footer a {
+  color: #ffd700; /* Gold color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-content p {
+  margin: 5px 0; /* Add spacing between lines */
+  font-size: 16px; /* Ensure readability */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .MONARCHY_LOGO {
+    width: 200px; /* Adjust logo size for smaller screens */
+  }
+
+  .text h2 {
+    font-size: 28px; /* Reduce heading size */
+  }
+
+  .text p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+
+  .background-map {
+    opacity: 0.9; /* Slightly increase visibility of the background */
+  }
+}
+
+@media (max-width: 480px) {
+  .MONARCHY_LOGO {
+    width: 150px; /* Further adjust logo size for very small screens */
+  }
+
+  .text h2 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .text p {
+    font-size: 14px; /* Further reduce paragraph font size */
+  }
+}

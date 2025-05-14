@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #272727; /* Sleek dark background */
+    color: #ffffff; /* White text for contrast */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1f1f1f; /* Dark gray background for the navbar */
+    width: 100%; /* Full width of the screen */
+    z-index: 10; /* Ensure it appears above other elements */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline; /* Inline list items */
+}
+
+.navbar ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+    font-size: 18px; /* Consistent font size */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar ul li a.active {
+    background-color: #ffd700; /* Highlight active page with gold */
+    color: #000; /* Black text for contrast */
+}
+
+.navbar ul li a:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    margin-top: 20px; /* Add space below the navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Profile Content */
+.profile-content {
+    max-width: 1200px;
+    text-align: center;
+    background: rgba(31, 31, 31, 0.95); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+/* Profile Image */
+.profile-image {
+    width: 70%; /* Slightly smaller image for a professional look */
+    max-width: 900px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 20px auto; /* Center the image and add spacing above */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
+}
+
+/* Headings */
+.profile-content h1 {
+    font-size: 36px; /* Main heading size */
+    color: #ffd700; /* Gold color for the heading */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Make the heading uppercase */
+    letter-spacing: 1.5px; /* Add spacing for a professional look */
+}
+
+.profile-content h2 {
+    font-size: 24px; /* Subheading size */
+    color: #ffffff; /* White for subheadings */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.profile-content p {
+    font-size: 16px; /* Paragraph size */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d3d3d3; /* Slightly lighter text for better readability */
+}
+
+/* Call-to-Action Button */
+.profile-content .cta-button {
+    display: inline-block;
+    background-color: #ffd700; /* Gold button */
+    color: #000; /* Black text for contrast */
+    padding: 12px 25px;
+    font-size: 16px; /* Button font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.profile-content .cta-button:hover {
+    background-color: #e6c200; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 24px; /* Video section heading size */
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.company-video {
+    width: 90%; /* Make the video span 80% of the container */
+    max-width: 1500px; /* Limit the maximum width */
+    height: 250px; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
+    margin-top: 20px; /* Add spacing above the video */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1f1f1f; /* Dark gray background */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px; /* Add spacing above the footer */
+    border-top: 2px solid #ffd700; /* Gold border for a professional look */
+}
+
+.footer a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Add spacing between lines */
+    font-size: 14px; /* Footer text size */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .profile-content h1 {
+        font-size: 28px; /* Reduce heading size for tablets */
+    }
+
+    .profile-content h2 {
+        font-size: 20px; /* Reduce subheading size */
+    }
+
+    .profile-content p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Reduce button font size */
+    }
+
+    .video-section h2 {
+        font-size: 20px; /* Reduce video section heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content h1 {
+        font-size: 24px; /* Further reduce heading size for mobile */
+    }
+
+    .profile-content h2 {
+        font-size: 18px; /* Further reduce subheading size */
+    }
+
+    .profile-content p {
+        font-size: 12px; /* Further reduce paragraph font size */
+    }
+
+    .cta-button {
+        font-size: 12px; /* Further reduce button font size */
+    }
+
+    .video-section h2 {
+        font-size: 18px; /* Further reduce video section heading size */
+    }
+}
