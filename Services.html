@@ -3,62 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services - Monarchy Security Agency</title>
-  <link rel="stylesheet" href="ServicesCSS.css" />
+  <title>Services — Monarchy Security Agency</title>
+  <meta name="description" content="Security services: commercial guarding, industrial security, VIP protection, anti-theft and sabotage prevention. Plus mission, vision, and gallery." />
+  <link rel="icon" type="image/png" href="assets/images/monarchy_logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="COMPANY_PROFILE.html">Company Profile</a></li>
-      <li><a href="Services.html" class="active">Services</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/monarchy_logo.png" alt="Monarchy Security Agency logo" />
+        <span class="brand-text"><strong>Monarchy Security Agency</strong><small>Focus of Loyalty &amp; Service</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="COMPANY_PROFILE.html">Company Profile</a></li>
+        <li><a href="Services.html" class="active" aria-current="page">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="container">
-    <!-- Main Heading -->
-    <h1 class="main-heading">MONARCHY SECURITY AGENCY
-        MISSION VISION
-    </h1>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Monarchy Security Agency</div>
+      <h1>Mission <span style="color:var(--gold)">and Vision</span></h1>
+      <p>Why we operate and what we aim for, plus photos from our posts.</p>
+    </div>
+  </header>
 
-    <!-- Mission Section -->
-    <div class="mission-vision">
-      <h1>Our Mission</h1>
-      <p>
-        Private Security Agency with effective management of trained and disciplined security personnel could greatly contribute to overall peace and order of the country, enhance the business atmosphere and attract foreign investments.
-      </p>
+  <main class="section wrap">
+    <h2>Services</h2>
+    <p class="sub">Call <a href="tel:+639778266992">0977 826 6992</a> or <a href="Contact.html">send us a message</a> with your location and headcount.</p>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>Private Security Agency with effective management of trained and disciplined security personnel could greatly contribute to overall peace and order of the country, enhance the business atmosphere and attract foreign investments.</p>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Our Vision</h3>
+      <p>To render efficient security services and provide safe environment in which our clients can function freely and effectively and contribute to their success of their business.</p>
     </div>
 
-    <!-- Vision Section -->
-    <div class="mission-vision">
-      <h1>Our Vision</h1>
-      <p>
-        To render efficient security services and provide safe environment in which our clients can function freely and effectively and contribute to their success of their business.
-      </p>
+    <h2 style="margin-top:36px">Security Services</h2>
+    <p class="sub">Call <a href="tel:+639778266992">0977 826 6992</a> or <a href="Contact.html">send us a message</a> with your location and headcount.</p>
+    <div class="grid-3">
+      <div class="card svc"><div class="svc-num">01</div><h3>Office and Commercial Guards</h3><p>Entrance duty, visitor logging, and roving inspection for offices, stores, and buildings.</p></div>
+      <div class="card svc"><div class="svc-num">02</div><h3>Industrial and Warehouse Guards</h3><p>Perimeter watch, gate control, and cargo monitoring for plants, warehouses, and depots.</p></div>
+      <div class="card svc"><div class="svc-num">03</div><h3>VIP Protection</h3><p>Personal escort for executives and private individuals, by schedule and on request.</p></div>
+      <div class="card svc"><div class="svc-num">04</div><h3>Residential and Subdivision</h3><p>Gate duty, visitor and sticker checking, and village roving.</p></div>
+      <div class="card svc"><div class="svc-num">05</div><h3>Event Guards</h3><p>Crowd control and entrance checking for programs, gatherings, and occasions.</p></div>
     </div>
 
-    <!-- Picture Section -->
-    <div class="picture-section">
-      <h1>Gallery</h1>
-      <div class="picture-gallery">
-        <img src="picture1.jpg" alt="Picture 1" class="gallery-image" />
-        <img src="picture2.jpg" alt="Picture 2" class="gallery-image" />
-        <img src="picture3.jpg" alt="Picture 3" class="gallery-image" />
-        <img src="picture4.jpg" alt="Picture 4" class="gallery-image" />
+    <h2 style="margin-top:36px">Photos</h2>
+    <p class="sub">Our guards at formations, inspections, and posts.</p>
+    <div class="gallery">
+      <figure><img src="assets/images/picture1.jpg" alt="Guards lined up during formation" loading="lazy" /></figure>
+      <figure><img src="assets/images/picture2.jpg" alt="Officer checking guards during briefing" loading="lazy" /></figure>
+      <figure><img src="assets/images/picture3.jpg" alt="Guards inside the training room" loading="lazy" /></figure>
+      <figure><img src="assets/images/picture4.jpg" alt="Photos of guards, office, and training" loading="lazy" /></figure>
+    </div>
+
+    <div class="band" style="margin-top:28px;border-radius:14px">
+      <div class="band-inner">
+        <div><h2>Ask for a <span style="color:var(--gold)">quote</span></h2><p class="sub" style="margin:6px 0 0">Message us your location and how many guards you need.</p></div>
+        <div class="cta-row" style="margin:0"><a class="btn btn-gold" href="Contact.html">Contact us</a><a class="btn btn-ghost" href="tel:+639778266992">0977 826 6992</a></div>
       </div>
     </div>
-  </div>
+  </main>
 
-  <!-- Footer Section -->
   <footer class="footer">
-    <div class="footer-content">
-      <p><strong>Contact Us</strong></p>
-      <p>Phone: <a href="tel:0907 435 2854">0977 826 6992</a></p>
-      <p>Email: <a href="mailto:2monarchy0@gmail.com">2monarchy0@gmail.com</a></p>
-      <p>Location: <a href="https://maps.app.goo.gl/e1wPSGJ4FQDQu7md6">203 FNE Bldg. Commonwealth Ave, Cor Regalado Ave, Novaliches, Quezon City, Metro Manila</a></p>
+    <div class="footer-inner">
+      <div>
+        <h4>Monarchy Security Agency</h4>
+        <p>203 FNE Bldg., Commonwealth Ave. cor. Regalado Ave., Novaliches, Quezon City, Metro Manila</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: <a href="tel:+639778266992">0977 826 6992</a></li>
+          <li>Email: <a href="mailto:2monarchy0@gmail.com">2monarchy0@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/e1wPSGJ4FQDQu7md6" target="_blank" rel="noopener">Open in Google Maps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="COMPANY_PROFILE.html">Company Profile</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">© <span id="year">2026</span> Monarchy Security Agency • PNP-SOSIA License No. PSA-WGS-000200-2024</div>
   </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
