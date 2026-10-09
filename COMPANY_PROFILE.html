@@ -2,52 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Company Profile - Monarchy Security Agency</title>
-  <link rel="stylesheet" href="COMPANYPROFILECSS.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile — Monarchy Security Agency</title>
+  <meta name="description" content="Profile of Monarchy Security Agency: founded 1984 from a police family legacy, PNP-SOSIA licensed, 100+ guards, VIP and industrial security pioneers." />
+  <link rel="icon" type="image/png" href="assets/images/monarchy_logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="COMPANY_PROFILE.html" class="active">Company Profile</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/monarchy_logo.png" alt="Monarchy Security Agency logo" />
+        <span class="brand-text"><strong>Monarchy Security Agency</strong><small>Focus of Loyalty &amp; Service</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="COMPANY_PROFILE.html" class="active" aria-current="page">Company Profile</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="container">
-    <!-- Profile Content Section -->
-    <div class="profile-content">
-      <h1>Monarchy Security Agency</h1>
-      <p>
-        Below is an image that represents the essence of our company. It tells the story of our journey, 
-        our values, and our commitment to excellence in the field of security services.
-      </p>
-      <!-- Add the large image here -->
-      <img src="MONARCHY_PROFILE.png" alt="Company Profile" class="profile-image"/>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Company Profile</div>
+      <h1>About <span style="color:var(--gold)">Monarchy</span></h1>
+      <p>Started in 1984 by a police family. Now run by the second generation, with 100 guards posted and more on standby.</p>
     </div>
+  </header>
 
-    <!-- Video Section -->
-    <div class="video-section">
-      <h2>Monarchy Security Agency Video</h2>
-      <iframe 
-        class="company-video" 
-       src="https://www.youtube.com/embed/51XBeWQunWk" title="Monarchy Security Agency" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
+  <main class="section wrap">
+    <div class="grid-2">
+      <article class="prose">
+        <h3>How we started</h3>
+        <p>Our late father was a Police Lieutenant with the Western Police District. In <strong>1984</strong>, together with fellow retired officers, he put up a security agency. It was registered with the DTI and licensed by <strong>PNP SAGSD, Camp Crame</strong>, and became a member of <strong>PADPAO</strong> under <strong>PCSUSIA</strong>.</p>
+        <p>Our officers came from the PNP and the military. Most rose from the ranks. Their work covered intelligence, crime prevention, and case solution.</p>
+        <p>By the early 2000s, we were already posting guards for VIPs and industrial plants. We handled burglary, theft, sabotage, and bomb awareness concerns.</p>
+        <p>When our father passed, his son took over to continue the work. He is an Army reservist sergeant with MBA, CSMS, and BOSH-SO2 training. The company was renamed <strong>Monarchy Security Agency</strong>. Our current license is PNP-SOSIA <strong>No. PSA-WGS-000200-2024</strong>.</p>
+        <h3>Where we are now</h3>
+        <p>We have <strong>100 guards posted</strong> at present. When clients need more, we pull from licensed relievers through our partner training academy. We also invest in basic security equipment to support our guards on post.</p>
+        <details class="scan">
+          <summary style="cursor:pointer;color:var(--gold-light);font-weight:700">View original profile scan (image)</summary>
+          <p class="small">Original document preserved for reference. Text above is the searchable version.</p>
+          <img src="assets/images/MONARCHY_PROFILE.png" alt="Scanned company profile document" loading="lazy" />
+        </details>
+      </article>
+      <div>
+        <div class="card">
+          <h3>Credentials</h3>
+          <div class="creds" style="grid-template-columns:1fr">
+            <div class="cred"><strong>Founded</strong>1984 — operating to present</div>
+            <div class="cred"><strong>License</strong>PNP-SOSIA LTO No. PSA-WGS-000200-2024</div>
+            <div class="cred"><strong>Registration</strong>DTI single proprietorship (legacy) → Monarchy Security Agency</div>
+            <div class="cred"><strong>Affiliations</strong>PADPAO member • PCSUSIA supervision</div>
+            <div class="cred"><strong>Force</strong>100 posted guards + standby licensed pool</div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <h3>Agency video</h3>
+          <p class="small">Watch an overview of our people and deployments.</p>
+          <div style="margin-top:12px">
+            <iframe class="video" src="https://www.youtube.com/embed/51XBeWQunWk" title="Monarchy Security Agency" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <!-- Footer Section -->
   <footer class="footer">
-    <div class="footer-content">
-      <p><strong>Contact Us</strong></p>
-      <p>Phone: <a href="tel:0907 435 2854">0977 826 6992</a></p>
-      <p>Email: <a href="mailto:2monarchy0@gmail.com">2monarchy0@gmail.com</a></p>
-      <p>Location <a href="https://maps.app.goo.gl/e1wPSGJ4FQDQu7md6">Location: 203 FNE Bldg. Commonwealth Ave, Cor Regalado Ave, Novaliches, Quezon City, Metro Manila</a></p>
-      <p></p>
+    <div class="footer-inner">
+      <div>
+        <h4>Monarchy Security Agency</h4>
+        <p>203 FNE Bldg., Commonwealth Ave. cor. Regalado Ave., Novaliches, Quezon City, Metro Manila</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: <a href="tel:+639778266992">0977 826 6992</a></li>
+          <li>Email: <a href="mailto:2monarchy0@gmail.com">2monarchy0@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/e1wPSGJ4FQDQu7md6" target="_blank" rel="noopener">Open in Google Maps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="COMPANY_PROFILE.html">Company Profile</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">© <span id="year">2026</span> Monarchy Security Agency • PNP-SOSIA License No. PSA-WGS-000200-2024</div>
   </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
